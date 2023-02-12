@@ -10,7 +10,6 @@ if os.path.exists('database.db')==False:
 
     con=sql.connect('database.db')
     cur=con.cursor()
-    #cur.execute('CREATE TABLE arhiva(orginal,Klasifikaciska_oznaka,Naziv_dokumenta,broj_dokumenta,datum_nastanka)')
     cur.execute('''
         CREATE TABLE Arhiva(
         orginal CHAR(10),
